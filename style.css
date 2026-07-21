@@ -41,21 +41,24 @@ h2 {
 }
 
 main {
-    border-radius: 20px;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 810px) {
     main {
         display: flex;
         flex-direction: column;
+        box-sizing: border-box;
+        width: 300px;
     }
 }
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 811px) {
     main {
         display: flex;
         flex-direction: row;
         box-sizing: border-box;
-        min-width: 100 vw;
+        
         width: 800px;
     }
 }
@@ -69,6 +72,32 @@ main {
 }
 
 .card {
-    padding: 20px;
-    border-radius: 10px;
+    padding: 30px;
+    box-sizing: border-box;
+    width: 300px;
+}
+
+p, h2 {
+    color: hsla(0, 0%, 100%, 0.75); 
+}
+
+.btn {
+    height: 30px;
+    width: 100px;
+    border-radius: 20px;
+    background-color: hsl(0, 0%, 95%);
+    border: none;
+    outline-color: hsl(0, 0%, 95%);
+    outline-style: solid;
+    margin-top: 50px;
+}
+
+.sedan-btn {
+    color: hsl(31, 77%, 52%);
+}
+.suv-btn {
+    color: hsl(184, 100%, 22%);
+}
+.luxury-btn {
+    color: hsl(179, 100%, 13%);
 }
