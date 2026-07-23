@@ -101,3 +101,10 @@ p, h2 {
 .luxury-btn {
     color: hsl(179, 100%, 13%);
 }
+
+.btn:hover {
+    cursor: pointer;
+    background-color: transparent;
+    color: hsla(0, 0%, 100%, 0.75);
+    outline-width: 1px;
+}
